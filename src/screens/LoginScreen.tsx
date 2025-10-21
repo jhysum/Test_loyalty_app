@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  KeyboardAvoidingView,
+  Platform,
+} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 export default function LoginScreen() {
@@ -60,11 +68,7 @@ export default function LoginScreen() {
           <Text style={styles.forgotPassword}>Forgot password?</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.loginButton}
-          onPress={handleLogin}
-          activeOpacity={0.8}
-        >
+        <TouchableOpacity style={styles.loginButton} onPress={handleLogin} activeOpacity={0.8}>
           <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
 
